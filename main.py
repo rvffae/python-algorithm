@@ -36,7 +36,7 @@ else :
     print("le second nombre est le plus grand")
     
 #7
-_nombre = int(input("entrez un nombre :"))
+_nombre = int(input("entrez un nombre: "))
 for i in range (1,11):
     print(_nombre * i) 
 
@@ -94,4 +94,15 @@ for i in range(1, nombre_de_la_factorielle+1):
     print(factorielle)
 
 #14
-nombre_ex_14 = int(input("entrez un nombre : "))
+nombre_pair_impair = int(input("entrez un nombre : "))
+for i in range(0, nombre_pair_impair+1):
+    if i % 2 == 0:
+        print(i)
+
+#15 
+note1 = float(input("entrer la premiere note: "))
+note2 = float(input("entrer la seconde note: "))
+note3 = float(input("entrer la troisieme note: "))
+moyenne = (note1 + note2 + note3 ) / 3
+
+print(moyenne)
