@@ -1,3 +1,4 @@
+"""
 #1
 print("bonjour monde")
 
@@ -106,3 +107,39 @@ note3 = float(input("entrer la troisieme note: "))
 moyenne = (note1 + note2 + note3 ) / 3
 
 print(moyenne)
+"""
+#16 --> récusivité 
+
+def factorielle(n):
+    if n == 0 or n ==1:
+        return 1
+    else:
+        return  n * factorielle(n-1)
+number_facto = int(input("entrez un nombre"))
+print(factorielle(number_facto))
+
+#16 --> avec boucle 
+
+def factorielle_boucle(n):
+    result = 1
+    for i in range(1 , n+1):
+        result *= i
+    return result
+number_facto_boucle = int(input("entrez un nombre: "))
+print(factorielle_boucle(number_facto_boucle))
+
+    
+# 17 
+def inverser_liste(liste):
+    liste_inverse = []
+    for i in range(len(liste) -1 ,-1 ,-1):
+        liste_inverse.append(liste[i])
+    return liste_inverse
+
+# Test de la fonction
+ma_liste = [1, 2, 3, 4, 5, 6 ,7, 8, 9, 10]
+print("Liste originale:", ma_liste)
+print("Liste inversée:", inverser_liste(ma_liste))
+
+
+
